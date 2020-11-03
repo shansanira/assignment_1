@@ -1,4 +1,4 @@
-@import './variabls';
+@import "./variabls";
 
 body {
     margin: 0;
@@ -15,4 +15,13 @@ body {
 
 p {
     color: $color-ash;
+}
+
+.custom-btn {
+    background-color: $color-light-green;
+    border: none;
+}
+.custom-btn:hover {
+    background-color: $color-blue-green;
+    border: none;
 }
