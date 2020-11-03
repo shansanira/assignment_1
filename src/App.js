@@ -7,6 +7,56 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import CustomAccordian from './components/accordian/accordian';
 
 function App() {
+
+  const accordianDetails = [
+    {
+      title: "Upcomming Activities",
+      TimelineData: [
+        {
+          itemTitle: "Followup Call",
+          id: "605875080",
+          from: "2020-07-24",
+          to: "2020-10-24",
+          participants: "-",
+          location: "Kandy",
+          remarks: "SR-Served"
+        },
+        {
+          itemTitle: "Customer Visit",
+          id: "605875093",
+          from: "2020-02-12",
+          to: "2020-03-12",
+          participants: "-",
+          location: "Colombo",
+          remarks: "SR-Served"
+        },
+      ]
+    },
+    {
+      title: "Completed Activities",
+      TimelineData: [
+        {
+          itemTitle: "Followup Call",
+          id: "605875080",
+          from: "2020-07-24",
+          to: "2020-10-24",
+          participants: "-",
+          location: "Kandy",
+          remarks: "SR-Served"
+        },
+        {
+          itemTitle: "Customer Visit",
+          id: "605875093",
+          from: "2020-02-12",
+          to: "2020-03-12",
+          participants: "-",
+          location: "Colombo",
+          remarks: "SR-Served"
+        },
+      ]
+    }
+  ];
+
   return (
     <div className="container-fluid">
       <div className="row">
@@ -41,7 +91,7 @@ function App() {
             </div>
 
             <div className="col-sm-12">
-              <CustomAccordian />
+              <CustomAccordian data={accordianDetails} />
             </div>
           </div>
         </div>

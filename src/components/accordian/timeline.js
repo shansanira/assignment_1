@@ -2,7 +2,7 @@ import React from 'react';
 import './timeline.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Timeline = () => (
+const Timeline = ({ timelineData }) => (
     <div className="time-line">
         <div className="time-line-item">
             <div className="time-line-icon-container">

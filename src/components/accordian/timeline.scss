@@ -21,7 +21,7 @@
             align-items: center;
             justify-content: center;
             color: $color-ash;
-            border: 1px solid #aaa;
+            border: 1px solid $color-ash;
             border-radius: 15px;
             background-color: $color-white;
             z-index: 4;
@@ -52,12 +52,17 @@
             align-items: center;
             flex-wrap: wrap;
 
+            h4 {
+                color: $color-dark-ash;
+            }
+
             span {
                 padding: 2px 8px;
                 font-size: 12px;
                 border: 1px solid $color-ash;
                 border-radius: 18px;
                 margin-left: 20px;
+                color: $color-ash;
             }
 
             .dec-item {
