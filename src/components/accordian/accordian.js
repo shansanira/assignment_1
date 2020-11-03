@@ -1,6 +1,7 @@
 import { React } from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
+import Timeline from './timeline';
 
 const CustomAccordian = () => (
     <Accordion defaultActiveKey="0">
@@ -9,7 +10,9 @@ const CustomAccordian = () => (
                 Click me!
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="0">
-                <Card.Body>Hello! I'm the body</Card.Body>
+                <Card.Body>
+                    <Timeline />
+                </Card.Body>
             </Accordion.Collapse>
         </Card>
         <Card>

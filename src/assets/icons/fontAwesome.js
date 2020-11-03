@@ -7,7 +7,8 @@ import {
     faEnvelope,
     faPhoneAlt,
     faLightbulb,
-    faFlag
+    faFlag,
+    faFileAlt
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -15,5 +16,6 @@ library.add(
     faEnvelope,
     faPhoneAlt,
     faLightbulb,
-    faFlag
+    faFlag,
+    faFileAlt
 );
