@@ -6,6 +6,9 @@ import './assets/styles/base.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// import your fontawesome library
+import './assets/icons/fontAwesome';
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

@@ -1,5 +1,6 @@
 import React from 'react';
 import './profile.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProfilePic from './../../assets/images/proflie.png';
 
 const Profile = () => (
@@ -11,13 +12,13 @@ const Profile = () => (
             <h3 className="my-3">Saman Jayakodi</h3>
             <div className="icon-container">
                 <div className="icon-outer">
-                    <i className="fas fa-mobile-alt"></i>
+                    <FontAwesomeIcon icon={['fas', 'mobile-alt']} fixedWidth />
                 </div>
                 <div className="icon-outer">
-                    <i className="fas fa-envelope"></i>
+                    <FontAwesomeIcon icon={['fas', 'envelope']} fixedWidth />
                 </div>
                 <div className="icon-outer">
-                    <i className="fas fa-phone-alt"></i>
+                    <FontAwesomeIcon icon={['fas', 'phone-alt']} fixedWidth />
                 </div>
             </div>
             <div className="progress-container">
