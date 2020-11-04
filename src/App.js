@@ -10,6 +10,7 @@ function App() {
 
   const accordianDetails = [
     {
+      id: 1,
       title: "Upcomming Activities",
       TimelineData: [
         {
@@ -33,6 +34,7 @@ function App() {
       ]
     },
     {
+      id: 2,
       title: "Completed Activities",
       TimelineData: [
         {

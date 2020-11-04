@@ -6,20 +6,18 @@ import Timeline from './timeline';
 const CustomAccordian = ({ data }) => (
     <Accordion>
         {
-            data && data.map((item, index) => {
-                return (
-                    <Card key={index}>
-                        <Accordion.Toggle as={Card.Header} eventKey={index}>
-                            {item.title}
-                        </Accordion.Toggle>
-                        <Accordion.Collapse eventKey={index}>
-                            <Card.Body>
-                                <Timeline timelineData={item.TimelineData} />
-                            </Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
-                )
-            })
+            data && data.map(item => (
+                <Card key={item.id}>
+                    <Accordion.Toggle as={Card.Header} eventKey={item.id}>
+                        {item.title}
+                    </Accordion.Toggle>
+                    <Accordion.Collapse eventKey={item.id}>
+                        <Card.Body>
+                            <Timeline timelineData={item.TimelineData} />
+                        </Card.Body>
+                    </Accordion.Collapse>
+                </Card>
+            ))
         }
     </Accordion>
 );
