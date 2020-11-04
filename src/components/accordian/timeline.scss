@@ -1,5 +1,12 @@
 @import "./../../assets/styles/variabls";
 
+.card-header {
+    cursor: pointer;
+    h6 {
+        color: $color-basic-green;
+    }
+}
+
 .time-line {
     width: 100%;
     padding: 40px 15%;
