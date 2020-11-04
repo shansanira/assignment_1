@@ -1,0 +1,74 @@
+@import "./../../assets/styles/variabls";
+
+.custom-breadcrumb {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+
+    li {
+        float: left;
+        width: 200px;
+
+        a {
+            color: #fff;
+            display: block;
+            background: $color-light-green;
+            text-decoration: none;
+            position: relative;
+            height: 40px;
+            line-height: 40px;
+            padding: 0 10px 0 5px;
+            text-align: center;
+            margin-right: 23px;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                border: 0 solid $color-light-green;
+                border-width: 20px 10px;
+                width: 0;
+                height: 0;
+            }
+
+            &:before {
+                left: -20px;
+                border-left-color: transparent;
+            }
+
+            &:after {
+                left: 100%;
+                border-color: transparent;
+                border-left-color: $color-light-green;
+            }
+
+            &:hover,
+            &:active {
+                background-color: $color-blue-green;
+
+                &:before {
+                    border-color: $color-blue-green;
+                    border-left-color: transparent;
+                }
+
+                &:after {
+                    border-left-color: $color-blue-green;
+                }
+            }
+        }
+
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+
+            a:before {
+                border: none;
+            }
+        }
+
+        &:last-child a {
+            padding-right: 15px;
+            border-radius: 0 -3px 4px 0;
+        }
+    }
+}

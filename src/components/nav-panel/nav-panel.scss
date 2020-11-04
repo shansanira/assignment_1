@@ -1,0 +1,17 @@
+@import "./../../assets//styles//variabls";
+
+.nav-panel {
+    width: 100%;
+    box-shadow: 0 0px 14px 0px rgba(0, 0, 0, 0.4);
+
+    .list-group {
+        a {
+            color: $color-ash;
+            text-decoration: none;
+        }
+        .active-item .list-group-item {
+            background-color: $color-basic-green;
+            color: $color-dark-ash;
+        }
+    }
+}
